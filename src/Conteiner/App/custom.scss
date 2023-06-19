@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/bootstrap';
+
+.logo-line {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.logo-wrap {
+    width: 180px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.5;
+    img {
+        width: 180px;
+        height: 90px;
+    }
+}
+.like-box {
+    width: 14px;
+    height: 15px;
+
+    background-size: 15px;
+}
