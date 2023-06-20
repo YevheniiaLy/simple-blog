@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './article.scss'
 type Props = {
     id: number
@@ -7,9 +6,23 @@ type Props = {
     author: string
     date: string
     image: string
-    text: string
+    text1: string
+    text2: string
+    text3: string
+    textTitle: string
 }
-const Article = ({ id, theme, title, author, date, image, text }: Props) => {
+const Article = ({
+    id,
+    theme,
+    title,
+    author,
+    date,
+    image,
+    text1,
+    text2,
+    text3,
+    textTitle,
+}: Props) => {
     return (
         <div className="article">
             <div className="article-theme">{theme}</div>
@@ -18,7 +31,12 @@ const Article = ({ id, theme, title, author, date, image, text }: Props) => {
                 written by {author} | {date}
             </div>
             <img src={image} alt={title} />
-            <div className="article-text container-md">{text}</div>
+            <div className="article-text container-md">
+                <p>{text1}</p>
+                <p>{text2}</p>
+                <h3 className="text-title">{textTitle}</h3>
+                <p>{text3}</p>
+            </div>
         </div>
     )
 }

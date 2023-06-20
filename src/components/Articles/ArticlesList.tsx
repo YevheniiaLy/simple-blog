@@ -7,7 +7,18 @@ const ArticlesList = (props: Props) => {
             <div className="container text-center">
                 <div className="article-container">
                     {articleArray.map(
-                        ({ id, theme, title, author, date, image, text }) => (
+                        ({
+                            id,
+                            theme,
+                            title,
+                            author,
+                            date,
+                            image,
+                            text1,
+                            text2,
+                            text3,
+                            textTitle,
+                        }) => (
                             <div>
                                 <Article
                                     id={id}
@@ -16,7 +27,10 @@ const ArticlesList = (props: Props) => {
                                     author={author}
                                     date={date}
                                     image={image}
-                                    text={text}
+                                    text1={text1}
+                                    text2={text2}
+                                    text3={text3}
+                                    textTitle={textTitle}
                                 />
                             </div>
                         )

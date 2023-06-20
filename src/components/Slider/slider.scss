@@ -1,12 +1,33 @@
-/* .slide1 {
-    background-image: url('../images/article-id1.jpg');
-} */
 .swiper-slide {
-    height: 200px;
+    height: 400px;
 }
 .swiper-button-next {
     color: #b3a6a6;
 }
 .swiper-button-prev {
     color: #b3a6a6;
+}
+.slide {
+    height: 400px;
+    img {
+        width: 100%;
+    }
+    position: relative;
+}
+.slide-info {
+    position: absolute;
+    width: 30%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.slide-title {
+    color: white;
 }
